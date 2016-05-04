@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="main" template="/WEB-INF/layout/main.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+    <definition name="home" extends="main">
+    <put-attribute name="title" value="Visual Modelling Group" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="home" />
+  </definition>
+  
+  <definition name="users" extends="main">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	<definition name="studies" extends="main">
+		<put-attribute name="title" value="Studies" />
+		<put-attribute name="body" value="/WEB-INF/jsp/studies-page.jsp" />
+		<put-attribute name="current" value="studies" />
+	</definition>
+	<definition name="user-detail" extends="main">
+		<put-attribute name="title" value="User Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	<definition name="user-info" extends="main">
+		<put-attribute name="title" value="User Information" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-info.jsp" />
+		<put-attribute name="current" value="userInfo" />
+	</definition>
+	<definition name="current-study" extends="main">
+		<put-attribute name="title" value="Current Study" />
+		<put-attribute name="body" value="/WEB-INF/jsp/current-study.jsp" />
+		<put-attribute name="current" value="currentStudy" />
+	</definition>
+	<definition name="questions" extends="main">
+		<put-attribute name="title" value="Study Questions" />
+		<put-attribute name="body" value="/WEB-INF/jsp/questions.jsp" />
+		<put-attribute name="current" value="questions" />
+	</definition>
+	
+	<definition name="questions-preview" extends="main">
+		<put-attribute name="title" value="Preview" />
+		<put-attribute name="body" value="/WEB-INF/jsp/questions-preview.jsp" />
+		<put-attribute name="current" value="anwsers" />
+	</definition>
+	
+	
+	<definition name="user-registration" extends="main">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-registration.jsp" />
+		<put-attribute name="current" value="register" />
+	</definition>
+	
+	<definition name="login" extends="main">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+	
+	<definition name="exam" extends="main">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-user.jsp" />
+		<put-attribute name="current" value="exam" />
+	</definition>
+	
+	<definition name="exam-start" extends="main">
+		<put-attribute name="title" value="Exam" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-start.jsp" />
+		<put-attribute name="current" value="examstart" />
+	</definition>
+	
+	<definition name="exam-end" extends="main">
+		<put-attribute name="title" value="Exam" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-end.jsp" />
+		<put-attribute name="current" value="examend" />
+	</definition>
+	
+	<definition name="exam-summary" extends="main">
+		<put-attribute name="title" value="Exam" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-summary.jsp" />
+		<put-attribute name="current" value="examsummary" />
+	</definition>
+	
+	<definition name="listexams" extends="main">
+		<put-attribute name="title" value="List Exams" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-list.jsp" />
+		<put-attribute name="current" value="examlist" />
+	</definition>
+	
+		<definition name="exam-detail" extends="main">
+		<put-attribute name="title" value="List Exams" />
+		<put-attribute name="body" value="/WEB-INF/jsp/exam-detail.jsp" />
+		<put-attribute name="current" value="examdetail" />
+	</definition>
+	
+	
+	
+  </tiles-definitions>
